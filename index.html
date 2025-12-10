@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rohit Sharma — Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <div class="logo">Rohit</div>
+      <nav>
+        <ul>
+          <li><a href="#home" data-target="home">Home</a></li>
+          <li><a href="#about" data-target="about">About</a></li>
+          <li><a href="#skills" data-target="skills">Skills</a></li>
+          <li><a href="#projects" data-target="projects">Projects</a></li>
+          <li><a href="#education" data-target="education">Education</a></li>
+          <li><a href="#contact" data-target="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="accent">Rohit Sharma</span></h1>
+        <p class="subtitle">Web Developer • BE - CSE (Chandigarh University) • Frontend Enthusiast</p>
+        <div class="hero-cta">
+          <button class="btn" id="viewProjectsBtn">View Projects</button>
+          <a class="btn ghost" href="#" id="downloadResume">Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img id="profilePhoto" src="images/rohit_img.jpg" alt="Rohit Sharma" class="hero-photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h2>About Me</h2>
+    <p>I am Rohit Sharma, currently pursuing my BE in Computer Science Engineering from Chandigarh University. I love building interactive, responsive, and user-friendly websites using modern web technologies. I focus on clean interfaces, accessibility, and performance.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React.js</div>
+      <div class="skill">C++</div>
+      <div class="skill interpersonal">Objection creates opportunities</div>
+      <div class="skill interpersonal">Leadership & Teamwork</div>
+      <div class="skill interpersonal">Economical thinking</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <h2>Projects</h2>
+
+    <!-- Image Slider Project (interactive demo) -->
+    <article class="project-card">
+      <h3>Image Slider</h3>
+      <p>An interactive image slider built with HTML/CSS/JS — shows DOM manipulation, animations and controls.</p>
+
+      <div class="slider" id="slider">
+        <button class="slider-btn left" id="prevSlide" aria-label="Previous slide">&#10094;</button>
+
+        <div class="slides" id="slides">
+          <img src="images\jg.jpg" alt="slide 1" />
+          <img src="images\PIXNIO-316048-4286x2850.jpeg" alt="slide 2" />
+          <img src="images\wp5804413.webp" alt="slide 3" />
+        </div>
+
+        <button class="slider-btn right" id="nextSlide" aria-label="Next slide">&#10095;</button>
+      </div>
+
+      <div class="slider-dots" id="sliderDots"></div>
+    </article>
+
+    <!-- Todo List Project (interactive demo) -->
+    <article class="project-card">
+      <h3>Todo List App</h3>
+      <p>A small task manager demonstrating adding, removing, marking complete and storing tasks in localStorage.</p>
+
+      <div class="todo-app">
+        <form id="todoForm" class="todo-form" onsubmit="return false;">
+          <input id="todoInput" placeholder="Add a new task..." />
+          <button id="addTodoBtn" class="btn small">Add</button>
+        </form>
+
+        <ul id="todoList" class="todo-list"></ul>
+        <div class="todo-actions">
+          <button id="clearCompleted" class="btn ghost small">Clear Completed</button>
+          <button id="clearAll" class="btn ghost small">Clear All</button>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section container">
+    <h2>Education</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h4>Bachelor of Computer Science Engineering</h4>
+        <p>Chandigarh University, Gharuan — Session: 2023–2027 | CGPA: 6.5</p>
+      </div>
+      <div class="edu-card">
+        <h4>Intermediate (CBSE)</h4>
+        <p>Ken Bridge School, Tamil Nadu — 2022–2023 | 68%</p>
+      </div>
+      <div class="edu-card">
+        <h4>Matriculation (CBSE)</h4>
+        <p>Ken Bridge School, Tamil Nadu — 2020–2021 | 73%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <div>
+        <p><strong>Name:</strong> Rohit Sharma</p>
+        <p><strong>Address:</strong> Laxmangarh, Rajasthan - 332311</p>
+        <p><strong>Email:</strong> <a href="mailto:rohit@gmail.com">rohit@gmail.com</a></p>
+        <p><strong>Phone:</strong> +91 9600784681</p>
+        <p><strong>D.O.B:</strong> 16-07-2005</p>
+        <p><strong>Languages:</strong> English, Hindi, Tamil</p>
+      </div>
+
+      <div>
+        <h4>Quick Message</h4>
+        <form id="contactForm" class="contact-form" onsubmit="return false;">
+          <input id="contactName" placeholder="Your name" required />
+          <input id="contactEmail" placeholder="Your email" required />
+          <textarea id="contactMsg" rows="4" placeholder="Message..." required></textarea>
+          <button id="sendMsg" class="btn">Send</button>
+          <p id="contactNote" class="note" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© 2025 Rohit Sharma | All Rights Reserved</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
