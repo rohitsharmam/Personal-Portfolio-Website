@@ -70,6 +70,8 @@ h2{ margin:0 0 16px; font-size:1.2rem; }
 
 /* PROJECTS */
 .project-card{ background:var(--card); padding:18px; border-radius:var(--radius); box-shadow:0 8px 28px rgba(15,23,42,0.06); margin-bottom:18px; }
+.project-card h3{ margin-top:0; }
+.project-card a{ margin-top:8px; display:inline-block; }
 
 /* SLIDER */
 .slider{ position:relative; overflow:hidden; border-radius:10px; margin-top:12px; background:#f3f6fb; }
