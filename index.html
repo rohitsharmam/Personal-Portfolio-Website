@@ -4,11 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Rohit Sharma — Portfolio</title>
-
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- NAVBAR -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
       <div class="logo">Rohit</div>
@@ -30,13 +29,15 @@
     <div class="container hero-grid">
       <div class="hero-text">
         <h1>Hello, I'm <span class="accent">Rohit Sharma</span></h1>
-        <p class="subtitle">Web Developer • BE - CSE (Chandigarh University) • Frontend Enthusiast</p>
+        <p class="subtitle">Frontend Web Developer • BE - CSE (Chandigarh University)</p>
         <div class="hero-cta">
           <button class="btn" id="viewProjectsBtn">View Projects</button>
-          <a class="btn ghost" href="#" id="downloadResume">Download Resume</a>
+          <!-- Download Resume button -->
+          <a class="btn ghost" href="resume/Rohit_Sharma_Resume.pdf" download>Download Resume</a>
         </div>
       </div>
       <div class="hero-photo-wrap">
+        <!-- Profile photo -->
         <img id="profilePhoto" src="images/rohit_img.jpg" alt="Rohit Sharma" class="hero-photo" />
       </div>
     </div>
@@ -45,21 +46,26 @@
   <!-- ABOUT -->
   <section id="about" class="section container">
     <h2>About Me</h2>
-    <p>I am Rohit Sharma, currently pursuing my BE in Computer Science Engineering from Chandigarh University. I love building interactive, responsive, and user-friendly websites using modern web technologies. I focus on clean interfaces, accessibility, and performance.</p>
+    <p>
+      I am Rohit Sharma, a Frontend Web Developer and Computer Science Engineering student at Chandigarh University.
+      I specialize in building responsive, user-friendly web interfaces using HTML, CSS, and JavaScript.
+      I am passionate about learning modern frontend technologies and creating clean, accessible designs.
+    </p>
   </section>
 
   <!-- SKILLS -->
   <section id="skills" class="section container">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">React.js</div>
-      <div class="skill">C++</div>
-      <div class="skill interpersonal">Objection creates opportunities</div>
-      <div class="skill interpersonal">Leadership & Teamwork</div>
-      <div class="skill interpersonal">Economical thinking</div>
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript (ES6)</div>
+      <div class="skill">React.js (Basics)</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill interpersonal">Teamwork</div>
+      <div class="skill interpersonal">Problem Solving</div>
+      <div class="skill interpersonal">Communication</div>
     </div>
   </section>
 
@@ -67,43 +73,39 @@
   <section id="projects" class="section container">
     <h2>Projects</h2>
 
-    <!-- Image Slider Project (interactive demo) -->
+    <!-- AI Assistant -->
     <article class="project-card">
-      <h3>Image Slider</h3>
-      <p>An interactive image slider built with HTML/CSS/JS — shows DOM manipulation, animations and controls.</p>
-
-      <div class="slider" id="slider">
-        <button class="slider-btn left" id="prevSlide" aria-label="Previous slide">&#10094;</button>
-
-        <div class="slides" id="slides">
-          <img src="images\jg.jpg" alt="slide 1" />
-          <img src="images\PIXNIO-316048-4286x2850.jpeg" alt="slide 2" />
-          <img src="images\wp5804413.webp" alt="slide 3" />
-        </div>
-
-        <button class="slider-btn right" id="nextSlide" aria-label="Next slide">&#10095;</button>
-      </div>
-
-      <div class="slider-dots" id="sliderDots"></div>
+      <h3>AI Assistant</h3>
+      <p>Interactive AI Assistant project built using JavaScript and APIs to assist with queries and tasks.</p>
+      <a class="btn ghost small" href="https://github.com/rohitsharmam/AI-Virtual-Assistant.git" target="_blank">GitHub</a>
     </article>
 
-    <!-- Todo List Project (interactive demo) -->
+    <!-- Student Registration Form -->
+    <article class="project-card">
+      <h3>Student Registration Form</h3>
+      <p>A registration form built with HTML, CSS, and JavaScript validating user inputs and storing details.</p>
+      <a class="btn ghost small" href="https://github.com/rohitsharmam/Student-Registration-Form.git" target="_blank">GitHub</a>
+    </article>
+
+    <!-- Share Content Page -->
+    <article class="project-card">
+      <h3>Share Content Page</h3>
+      <p>A web page UI to share content/posts, built with responsive design principles.</p>
+      <a class="btn ghost small" href="https://github.com/rohitsharmam/Share-Content-UI.git" target="_blank">GitHub</a>
+    </article>
+
+    <!-- Image Slider -->
+    <article class="project-card">
+      <h3>Image Slider</h3>
+      <p>Interactive image slider demonstrating DOM manipulation, animations, and navigation controls.</p>
+      <a class="btn ghost small" href="https://github.com/rohitsharmam/Image-Slider-Project.git" target="_blank">GitHub</a>
+    </article>
+
+    <!-- Todo List App -->
     <article class="project-card">
       <h3>Todo List App</h3>
-      <p>A small task manager demonstrating adding, removing, marking complete and storing tasks in localStorage.</p>
-
-      <div class="todo-app">
-        <form id="todoForm" class="todo-form" onsubmit="return false;">
-          <input id="todoInput" placeholder="Add a new task..." />
-          <button id="addTodoBtn" class="btn small">Add</button>
-        </form>
-
-        <ul id="todoList" class="todo-list"></ul>
-        <div class="todo-actions">
-          <button id="clearCompleted" class="btn ghost small">Clear Completed</button>
-          <button id="clearAll" class="btn ghost small">Clear All</button>
-        </div>
-      </div>
+      <p>Task manager using JavaScript and LocalStorage. Supports add, delete, mark complete and persistent tasks.</p>
+      <a class="btn ghost small" href="https://github.com/rohitsharmam/To-Do-List-App.git" target="_blank">GitHub</a>
     </article>
   </section>
 
@@ -156,7 +158,6 @@
     <div class="container">© 2025 Rohit Sharma | All Rights Reserved</div>
   </footer>
 
-  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
